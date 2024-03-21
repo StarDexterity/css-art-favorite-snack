@@ -1,0 +1,148 @@
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(222, 95, 120);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.icecream {
+    border: 7px solid black;
+    position: relative;
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    margin-top: -170px;
+    background-color: #ff7af6;
+    z-index: 1;
+}
+
+.icecream::before {
+    content: "";
+    position: absolute;
+    border: 7px solid black;
+    height: 70px;
+    width: 210px;
+    margin-top: 130px;
+    margin-left: -12px;
+    border-radius: 100%;
+    background-color: #ff7af6;
+}
+
+.icecream::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: #ff7af6;
+}
+
+.sprinkle {
+    position: absolute;
+    width: 15px;
+    height: 6px;
+    border-radius: 25%;
+    z-index: 3;
+}
+
+.s1 {
+    transform: rotate(-74deg);
+    background-color: #99ff00;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.s2 {
+    transform: rotate(107deg);
+    background-color: #00bbff;
+    margin-top: 92px;
+    margin-left: 47px;
+}
+
+.s3 {
+    transform: rotate(27deg);
+    background-color: #99ff00;
+    margin-top: 35px;
+    margin-left: 90px;
+}
+
+.s4 {
+    transform: rotate(57deg);
+    background-color: #99ff00;
+    margin-top: 110px;
+    margin-left: 90px;
+}
+
+.s5 {
+    transform: rotate(57deg);
+    background-color: #d0d0d0;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.s6 {
+    transform: rotate(120deg);
+    background-color: #00bbff;
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+.s7 {
+    transform: rotate(-7deg);
+    background-color: #d0d0d0;
+    margin-top: 75px;
+    margin-left: 110px;
+}
+
+.s8 {
+    transform: rotate(190deg);
+    background-color: #00ff80;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+.s9 {
+    transform: rotate(-19deg);
+    background-color: #00ff80;
+    margin-top: 125px;
+    margin-left: 130px;
+}
+
+.cone {
+    height: 330px;
+    width: 220px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: black;
+    position: absolute;
+    
+}
+
+.cone::after {
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 300px;
+    width: 200px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-image: url('waffle-texture.jpg');
+    background-size: 200px 200px;
+    
+}
+
+.shadow {
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    margin-top: 350px;
+    background-color: rgb(0,0,0,0.2);
+    border-radius: 50%;
+}
